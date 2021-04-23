@@ -6,7 +6,10 @@ jobs:
   build_deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
       - name: Build Sapper
         uses: truewebartisans/actions-sapper@master
       - name: Deploy to GitHub Pages
