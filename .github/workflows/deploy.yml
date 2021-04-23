@@ -18,5 +18,6 @@ jobs:
         with:
           publish_dir: __sapper__/export
           publish_branch: gh-pages
+          keep_files: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
           

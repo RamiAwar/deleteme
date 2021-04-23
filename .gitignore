@@ -9,6 +9,10 @@ vendor/
 .forestry/
 .history/
 .vscode/
+__sapper__/**/*
+
+build.json
+
 
 # Logs
 logs
